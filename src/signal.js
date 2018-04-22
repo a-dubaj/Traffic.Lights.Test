@@ -1,8 +1,13 @@
 let current = 'red'
 module.exports = {
   change: () => {
-    current = 'yellow'
+    if(current === 'red'){
+      current = 'yellow'
+    } else {
+        current = 'green'
+    }
   },
+
   getCurrent: () => {
     return current
   },
